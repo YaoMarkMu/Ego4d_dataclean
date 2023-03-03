@@ -54,7 +54,6 @@ The mapping dictionary can be found [here](https://drive.google.com/drive/folder
 - EgoMCQ is a benchmark for video-language multiple-choice questions. Given a text query, we want the model to choose the correct video clip from five candidates that sampled from two settings: `inter-video` or `intra-video`.
 - For the usage of EgoMCQ, please see our dataloader `data_loader/EgoClip_EgoMCQ_dataset.py`.
 
-![EgoMCQ](figures/egomcq.jpg)
 
 ## 🏋️‍️ Pretraining
 This code is built on PyTorch with DistributedDataParallel (DDP). We pretrain EgoVLP on 4 nodes, each with 8 A100 GPUs (10 epochs in about two days).

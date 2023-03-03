@@ -77,7 +77,7 @@ This code is built on PyTorch with DistributedDataParallel (DDP). We pretrain Eg
 - Monitor the EgoMCQ curve during pretraining: `tensorboard --logdir results  --bind_all`
 
 ## 🗄 Pretrained Weights
-- We have released our pretrained EgoVLP model (EgoClip w/ EgoNCE) with best performance on EgoMCQ (90.7% inter-video & 57.2% intra-video) in [EgoVLP_PT_BEST](https://drive.google.com/file/d/1-cP3Gcg0NGDcMZalgJ_615BQdbFIbcj7/view?usp=sharing).
+- The pretrained EgoVLP model (EgoClip w/ EgoNCE) with best performance on EgoMCQ (90.7% inter-video & 57.2% intra-video) is released in [EgoVLP_PT_BEST](https://drive.google.com/file/d/1-cP3Gcg0NGDcMZalgJ_615BQdbFIbcj7/view?usp=sharing).
 - Please download and put the checkpoint under: `pretrained/`
 
 ^ This checkpoint is used for EPIC-Kitchens, NLQ, MQ, OSSC, and PNR tasks, except for Charades-Ego. Since we found that VLP (CC3M+WebVid2M, EgoClip) alway degrades significantly on Charades-Ego after the first epoch, we evaluate Charades-Ego using the first pretraining epoch weights of the pretrained model in [Pretrained Weights link](https://drive.google.com/file/d/10lRA4Fldt-c5Azh5D2Zvjwi-_YR5ve5e/view?usp=sharing).
